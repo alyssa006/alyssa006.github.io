@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="livres.html">Livres</a></li>
+            <li><a href="chats.html">Chats</a></li>
+        </ul>
+    </nav>
+</header>
+
+<h1>Bienvenue sur mon site</h1>
+
+<p>Ce site parle de mes passions : les livres et les chats.</p>
+
+<h2>Mes thèmes</h2>
+
+<img src="https://images.unsplash.com/photo-1512820790803-83ca734da794" width="300">
+<img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d" width="300">
+<img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131" width="300">
+<img src="https://images.unsplash.com/photo-1574158622682-e40e69881006" width="300">
+
+<h2>Musique de fond</h2>
+
+<audio id="musique">
+    <source src="music 2 (1)" type="audio/mpeg">
+    Votre navigateur ne supporte pas l'audio.
+</audio>
+
+<button onclick="document.getElementById('musique').play()">Play</button>
+<button onclick="document.getElementById('musique').pause()">Pause</button>
+<button onclick="document.getElementById('musique').load()">Stop</button>
+
+<div id="pied-de-page">
+<p> Projet SNT - Dernière mise à jour : 01/03/2026 <br/>
+
+		Les textes et images utilisés n'engagent que son auteur : Alyssa </p>
+</div> <br/>
+ 
+
+</body>
+</html>

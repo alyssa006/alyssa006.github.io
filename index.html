@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+ 
+<head>
+<title> Site de Alyssa </title>
+<meta charset="utf-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+ 
+<body>
+<div id="entete-de-page"> 
+<p> Accueil <br/> </p>
+</div> 
+<table id="bloc-menu" border="1">
+<tr>
+<th><a href="index.html"> Accueil </a></th>
+<th><a href="productions.html">Productions scolaires</a></th>
+<th><a href="passions.html">Mes passions</a></th>
+<th><a href="Videos.html">Mes vidéos</a></th>
+<th><a href="Site.html">Mon site de rêve</a></th>
+
+</tr>
+</table> <br/> 
+<div class="presentation">
+  <img src="avatar.png" alt="ceci est mon avatar" class="arrondie">
+  <div class="texte-presentation">
+   <h2>Je me présente: </h2>
+    <p>Je m'appelle Doghmane Alyssa, j'ai 15 ans et je suis en 2nde7. </p>
+    <p> En dehors de l'école, j'aime beaucoup lire (surtout de la romance), regarder des séries type Gossip Girl ainsi que jouer aux jeux vidéos. 
+    J'aime sortir dehors (seulement au printempt et en été) pour me balader, aller au parc, lire au parc et ce que j'aime surtout quand je sort dehors c'est aller à Cultura pour acheter des livres.
+    Prendre soin de mes cheveux est une chose que j'aime vraiment faire.  </p>
+    <p> <i>Je ne sais pas quel métier je veux faire plus tard mais j'aimerais bien faire des études de Droit ou de Psychologie. </i></p>
+  </div> 
+                </div>
+	<div>
+	<!--on ajoute le lien où se trouve la musique -->
+<audio  id="zic"src="music 2"></audio>
+<!--on nomme les boutons et leur statut -->
+<div>
+<a href="javascript:void(0)" onclick="changeState(0)" class="bouton">PLAY</a>
+<a href="javascript:void(0)" onclick="changeState(1)" class="bouton">PAUSE</a>
+<a href="javascript:void(0)" onclick="changeState(2)" class="bouton active">STOP</a>
+</div>
+<!--on écrit les variable du script -->
+<script>
+<!--on attribue valeur et fonction de chaque bouton -->
+function changeState(x){
+let boutons = document.querySelectorAll(".bouton");
+let audio = document.querySelector("#zic");
+for(let i =0; i<boutons.length; i++){
+boutons[i].classList.remove("active");
+}
+boutons[x].classList.add("active");
+if(x == 0){
+audio.play();
+}
+if(x == 1){
+audio.pause();
+}
+if(x == 2){
+audio.pause();
+audio.currentTime = 0;
+}
+}
+</script></div>
+
+<hr>
+<div id="infos">
+<h3> A lire aussi: </h3>
+<ul>
+<li> <a href="Site.html"> Mon site de rêve </a> </li>
+<li> <a href="passions.html"> Mes passions </a> </li>
+<li> <a href="https://www.wattpad.com/"> Mon application préférée </a> </li>
+<li> <a href="https://fr.pinterest.com/"> L'application qui me sert d'inspiration quotidienne  </a> </li>
+<li> <a href="https://www.aroma-zone.com/?msclkid=a461b33f6d7c1e1a17b5da9c4b8adf92&utm_source=bing&utm_medium=cpc&utm_campaign=Pmax+-+FR+-+tMC+-+Top+ROI+-+Hors+marque+-+BoFu+-+Acquisition+-+All&utm_term=www.aroma-zone.com&utm_content=Groupe+d%27annonces"> Mon indispensable pour les cheveux  </a> </li>
+<li> <a href="https://www.twitch.tv/"> Les jeux vidéos </a> </li>
+</ul>
+</div>
+</div> <br/> 
+<div id="pied-de-page">
+<p> Projet SNT - Dernière mise à jour : 26/02/2026 <br/>
+
+		Les textes et images utilisés n'engagent que son auteur : Alyssa </p>
+</div> <br/>
+ 
+</body>
+ 
+</html>
+
+ 
