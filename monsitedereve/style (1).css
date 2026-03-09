@@ -1,0 +1,30 @@
+body {
+    background-color: #FF9E8A;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.menu li {
+    display: inline;
+    margin: 0 20px;
+}
+
+a {
+    color: #A94229;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #F5BE27;
+}
+
+a:hover {
+    color: #D16254;
+}
